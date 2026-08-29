@@ -1,0 +1,530 @@
+*{
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    margin: 0;
+}
+
+.card,
+.card-header {
+    background-color: white !important;
+    border-radius: 25px !important;
+}
+
+.card {
+    border: 0;
+    box-shadow: 0px 0px 35px -4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-header {
+    border-color: #f1f5f9;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.card-body label {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.card input::placeholder,
+.card textarea::placeholder {
+    color: #90a1b9;
+}
+
+.card input:focus,
+.card textarea:focus,
+.card select:focus {
+    border-color: #408bfd !important;
+    box-shadow: 0 0 0 2px #408bfd !important;
+}
+
+.container .title {
+    font-family: "DM Serif Display", serif !important;
+    font-size: 2rem !important;
+    font-weight: 500;
+}
+
+.container .card-body .inputsGroup div {
+    width: 48%;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.search-container .bi-search {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #90a1b9;
+}
+
+.search-container #tableSearchInput {
+    padding: 8px 12px;
+    padding-left: 40px;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    font-size: 1rem;
+    flex: 1;
+    height: 52px;
+    box-sizing: border-box;
+}
+
+.search-container #tableSearchInput::placeholder {
+    color: #90a1b9;
+}
+
+.search-container #tableSearchInput:focus {
+    outline: none !important;
+    border-color: #408bfd !important;
+    box-shadow: 0 0 0 2px #408bfd !important;
+}
+
+.search-container select {
+    width: 150px;
+    height: 52px;
+    padding: 0 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 1rem;
+}
+
+.filterable-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.filterable-table thead th {
+    padding: 12px;
+    background-color: #fafafa;
+    border-top: solid 1px #f1f5f9;
+    border-bottom: solid 1px #f1f5f9;
+    text-align: left;
+    font-weight: 600;
+    color: #737373;
+    font-size: 0.75rem;
+}
+
+.filterable-table tbody td {
+    padding: 12px;
+    font-size: 0.875rem;
+    color: #737373;
+}
+
+.filterable-table tbody .name {
+    color: #1e293b;
+    font-weight: 600;
+}
+
+.filterable-table tbody .status {
+    color: #00c950;
+    font-weight: 600;
+    background-color: #dbfce7;
+    height: 25px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    border: 1px solid #00c950;
+}
+
+.filterable-table tbody .statusInactive {
+    color: #737373;
+    font-weight: 600;
+    height: 25px;
+    width: 60px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    border: 1px solid #e5e5e5;
+}
+
+.filterable-table tbody .statusSuspended {
+    color: #dc2626;
+    font-weight: 600;
+    height: 25px;
+    width: 80px;
+    background-color: #fee2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    border: 1px solid #dc2626;
+}
+
+.container tbody td .bi-pencil,
+.container tbody td .bi-trash,
+.container tbody td .bi-eye {
+    color: #62748E;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.container tbody td .bi-pencil:hover {
+    background-color: #fef3c6;
+    color: #e17100;
+
+}
+
+.container tbody td .bi-trash:hover {
+    background-color: #ffe2e2;
+    color: #eb232c;
+}
+
+.container tbody td .bi-eye:hover {
+    background-color: #eef4fb;
+    color: #244278;
+}
+
+.container tbody td a {
+    text-decoration: none;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.user-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #294f91;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.user-name {
+    color: #1e293b;
+    font-weight: 600;
+}
+
+.user-id {
+    color: #94a3b8;
+    font-size: 0.75rem;
+    margin-top: 2px;
+}
+
+.headerContent p {
+    font-size: 0.875rem;
+    color: #737373;
+    font-weight: 500;
+}
+
+.table-footer {
+    padding: 16px 24px;
+    border-top: 1px solid #f1f5f9;
+    color: #737373;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: white;
+}
+
+.no-results {
+    display: none;
+}
+
+.no-results td {
+    height: 245px;
+    padding: 0 !important;
+    text-align: center;
+}
+
+.empty-state {
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #94a3b8;
+}
+
+.empty-state i {
+    font-size: 42px;
+    color: #e5e7eb;
+}
+
+.empty-state span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #94a3b8;
+}
+
+@media (max-width: 1100px) {
+    .filterable-table th:nth-child(3),
+    .filterable-table td:nth-child(3),
+    .filterable-table th:nth-child(5),
+    .filterable-table td:nth-child(5) {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 100%;
+    }
+
+    .container .title {
+        font-size: 1.75rem !important;
+    }
+
+    .search-container {
+        gap: 8px;
+    }
+
+    .search-container #tableSearchInput {
+        min-width: 0;
+        height: 48px;
+        font-size: 0.875rem;
+        padding-left: 38px;
+    }
+
+    .search-container .bi-search {
+        left: 14px;
+    }
+
+    .search-container select {
+        width: 105px;
+        min-width: 105px;
+        height: 48px;
+        padding: 0 10px;
+        font-size: 0.875rem;
+    }
+
+    .filterable-table th:nth-child(4),
+    .filterable-table td:nth-child(4),
+    .filterable-table th:nth-child(6),
+    .filterable-table td:nth-child(6),
+    .filterable-table th:nth-child(7),
+    .filterable-table td:nth-child(7) {
+        display: none;
+    }
+
+    .filterable-table {
+        width: 100%;
+    }
+
+    .filterable-table thead th {
+        padding: 12px 8px;
+        font-size: 0.7rem;
+        white-space: nowrap;
+    }
+
+    .filterable-table tbody td {
+        padding: 12px 8px;
+        font-size: 0.8rem;
+    }
+
+    .filterable-table th:first-child,
+    .filterable-table td:first-child {
+        padding-left: 16px;
+    }
+
+    .user-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+    .user-name {
+        font-size: 0.85rem;
+    }
+
+    .user-id {
+        font-size: 0.7rem;
+    }
+
+    .no-results td {
+        height: 220px;
+    }
+
+    .empty-state {
+        height: 220px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .container .title {
+        font-size: 1.6rem !important;
+    }
+
+    .headerContent p {
+        font-size: 0.8rem;
+    }
+
+    .search-container {
+        gap: 7px;
+    }
+
+    .search-container #tableSearchInput {
+        height: 46px;
+        font-size: 0.8rem;
+        padding-left: 36px;
+        border-radius: 16px;
+    }
+
+    .search-container #tableSearchInput::placeholder {
+        font-size: 0.8rem;
+    }
+
+    .search-container .bi-search {
+        left: 13px;
+    }
+
+    .search-container select {
+        width: 90px;
+        min-width: 90px;
+        height: 46px;
+        padding: 0 7px;
+        border-radius: 16px;
+        font-size: 0.8rem;
+    }
+
+    .filterable-table th:nth-child(2),
+    .filterable-table td:nth-child(2) {
+        display: none;
+    }
+
+    .filterable-table thead th {
+        padding: 11px 6px;
+        font-size: 0.68rem;
+    }
+
+    .filterable-table tbody td {
+        padding: 11px 6px;
+    }
+
+    .filterable-table th:first-child,
+    .filterable-table td:first-child {
+        padding-left: 12px;
+    }
+
+    .filterable-table tbody td.name {
+        width: auto;
+    }
+
+    .user-avatar {
+        width: 38px;
+        height: 38px;
+        font-size: 0.75rem;
+    }
+
+    .user-name {
+        font-size: 0.8rem;
+    }
+
+    .user-id {
+        font-size: 0.68rem;
+    }
+
+    .filterable-table tbody .status {
+        width: 48px;
+        height: 24px;
+        font-size: 0.68rem;
+    }
+
+    .filterable-table tbody .statusInactive {
+        width: 56px;
+        height: 24px;
+        font-size: 0.68rem;
+    }
+
+    .filterable-table tbody .statusSuspended {
+        width: 72px;
+        height: 24px;
+        font-size: 0.68rem;
+    }
+
+    .container tbody td .bi-eye {
+        width: 26px;
+        height: 26px;
+    }
+
+    .table-footer {
+        padding: 14px 12px;
+        font-size: 0.7rem;
+    }
+
+    .no-results td {
+        height: 200px;
+    }
+
+    .empty-state {
+        height: 200px;
+    }
+
+    .empty-state i {
+        font-size: 36px;
+    }
+
+    .empty-state span {
+        font-size: 0.875rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .search-container select {
+        width: 82px;
+        min-width: 82px;
+        padding: 0 5px;
+    }
+
+    .search-container #tableSearchInput {
+        padding-left: 34px;
+    }
+
+    .filterable-table thead th {
+        font-size: 0.65rem;
+    }
+
+    .filterable-table tbody td {
+        font-size: 0.75rem;
+    }
+
+    .user-avatar {
+        width: 36px;
+        height: 36px;
+    }
+
+    .user-name {
+        font-size: 0.75rem;
+    }
+
+    .user-id {
+        font-size: 0.65rem;
+    }
+
+}
