@@ -1,0 +1,30 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.left-section {
+    background-image: url('./jonatan-pie-h8nxGssjQXs-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.row {
+    min-height: 100vh;
+}
+
+.form-control {
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.btn-primary {
+    padding: 10px;
+    font-weight: bold;
+    
+}
+.text-center{
+    text-align: center;
+}
